@@ -10,16 +10,27 @@
 
 int main()
 {
-    int days_in_a_week = 7;
-    float cm_to_in = 2.54;
+    int a = 9;
+    printf("a %d\n", a);
     
-    char the_w;
-    the_w = 'W';
+    int c = a++;
+    printf("c %d a %d\n", c, a);
     
-    printf("%d days in week.\n", days_in_a_week);
-    printf("%f cm per in.\n", cm_to_in);
-    printf("The %c is a cool hotel\n", the_w);
+    int d = --a;
+    printf("d %d a %d\n", d, a);
     
+    int b = a % 4;
+    printf("b %d a %d\n", b, a);
+    
+    float fa = 5.0 / .5;
+    printf("fa %f\n", fa);
+    
+    
+    fa *= 10;
+    // same as fa = fa * 10
+    
+    printf("fa %f\n", fa);
+
     
     return 0;
 }
